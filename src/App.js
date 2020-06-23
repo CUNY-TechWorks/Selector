@@ -31,6 +31,8 @@ class Selector extends Component {
            <Shape shape="square"/>
            <Shape shape="circle"/>
            <Shape shape="triangle"/>
+           <Shape shape="oval"/>
+           <Shape shape="trapezium"/>
          </div>
        </div>
     );
