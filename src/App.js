@@ -14,9 +14,11 @@ class Selector extends Component {
 
   selectShape = shapeName => {
     // changes state and triggers the render function 
-    this.setState({
-        shape: shapeName,
-     });
+    if(shapeName !== 'shape-list') {
+      this.setState({
+         shape: shapeName,
+      });
+    }
   }
   
   render() {
@@ -25,7 +27,7 @@ class Selector extends Component {
          <div className="navbar">
           <div>Selected: <span> {this.state.shape} </span> </div>
          </div>
-         <div className="shape-list"> Shape List 
+         <div className="shape-list" onClick={e => this.selectShape(e.target.className)}> Shape List 
            <Shape shape="square"/>
            <Shape shape="circle"/>
            <Shape shape="triangle"/>
