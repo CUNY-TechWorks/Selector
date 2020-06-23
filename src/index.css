@@ -14,7 +14,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: black
+  background-color: black;
 }
 .navbar {
   flex-grow: 1;
@@ -146,3 +146,50 @@ body {
     -ms-transform: rotate(-70deg);
     -o-transform: rotate(-70deg);
 }
+
+.footer {
+    flex-grow: 1;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    max-height: 30%; 
+    min-height: 40px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: x-large;
+}
+
+.box1 {
+    color: yellow;
+    background-color: black;
+    inline-size: 250px;
+    text-align: center;
+    min-height: 150px;
+    block-size: 216px;
+}
+
+.box2 {
+    color: yellow;
+    background-color: black;
+    inline-size: 250px;
+    text-align: center;
+    min-height: 150px;
+}
+
+ .bottom {
+    display: flex;
+    justify-content: center;
+ }
+
+ .button {
+    font-size: 40px;
+    background-color: rgb(51, 255, 0);
+ }
+
+ .lists {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+ }
